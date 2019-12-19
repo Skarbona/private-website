@@ -1,0 +1,22 @@
+[
+  {
+    "id": "home",
+    "name": "Home"
+  },
+  {
+    "id": "tools&tech",
+    "name": "Tools & Tech"
+  },
+  {
+    "id": "portfolio",
+    "name": "Portfolio"
+  },
+  {
+    "id": "gallery",
+    "name": "Gallery"
+  },
+  {
+    "id": "contact",
+    "name": "Contact"
+  }
+]
