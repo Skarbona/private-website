@@ -1,5 +1,7 @@
 import { MenuInitialState } from "./initialState.interface";
 
 export const menuInitialState: MenuInitialState = {
-  menuItems: []
+  menuItems: [],
+  loading: false,
+  error: false
 };

@@ -1,0 +1,14 @@
+@import "~materialize-css";
+
+
+$primary: color('light-blue', 'darken-1');
+
+.primary {
+  background-color: $primary
+}
+
+::selection {
+  background: #fff;
+  color: $primary;
+}
+

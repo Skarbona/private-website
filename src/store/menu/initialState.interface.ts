@@ -1,8 +1,10 @@
 export interface MenuItem {
-    id: string,
-    name: string
+  id: string;
+  name: string;
 }
 
 export interface MenuInitialState {
-   menuItems: MenuItem[]
+  menuItems: MenuItem[];
+  loading: boolean;
+  error: boolean;
 }
