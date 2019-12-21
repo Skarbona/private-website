@@ -5,7 +5,15 @@ import { HeaderInterface } from "./Header.interface";
 
 export const Header: React.FC<HeaderInterface> = ({ menuItems }) => {
   const sideNav = useRef<HTMLUListElement>(null);
+  const menuElements = useRef<HTMLLIElement[]>([]);
 
+  useEffect(
+    () => {
+        menuElements.current = menuElements.current.slice(0, menuItems.length);
+      // eslint-disable-next-line
+    },
+    [menuItems]
+  );
 
   useEffect(
     () => {
@@ -17,8 +25,13 @@ export const Header: React.FC<HeaderInterface> = ({ menuItems }) => {
   );
 
   const mapMenuItems = () =>
-    menuItems.map(item => (
-      <li key={`menuID-${item.id}`} className="animated fadeInDown slow">
+    menuItems &&
+    menuItems.map((item, i) => (
+      <li
+        key={`menuID-${item.id}`}
+        className="animated fadeInDown slow"
+        ref={el => ((menuElements.current as any)[i] = el)}
+      >
         <Link to="/"> {item.name} </Link>
       </li>
     ));

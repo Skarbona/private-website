@@ -11,6 +11,7 @@ import {
 
 import { Header } from "./Header/Header";
 import { RootState } from "../store/store.interface";
+import { Home } from "./Home/Home";
 
 // TODO: Add css modules
 const AppWrapper: React.FC<AppInterface> = ({
@@ -26,6 +27,7 @@ const AppWrapper: React.FC<AppInterface> = ({
     <BrowserRouter>
       <div className="filip-website">
         <Header menuItems={menuItems} />
+        <Home />
       </div>
     </BrowserRouter>
   );

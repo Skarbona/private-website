@@ -1,6 +1,5 @@
 @import "~materialize-css";
 
-
 $primary: color('light-blue', 'darken-1');
 
 .primary {
@@ -11,4 +10,6 @@ $primary: color('light-blue', 'darken-1');
   background: #fff;
   color: $primary;
 }
+
+@import "../components/Shared/Hero/Hero";
 
