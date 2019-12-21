@@ -1,5 +1,5 @@
-import {MenuItem} from "../../store/menu/initialState.interface";
+import { MenuItem } from "../../store/menu/initialState.interface";
 
 export interface HeaderInterface {
-    menuItems: MenuItem[]
+    menuItems: MenuItem[];
 }
