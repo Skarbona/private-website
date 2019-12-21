@@ -6,6 +6,7 @@ import { HeaderInterface } from "./Header.interface";
 export const Header: React.FC<HeaderInterface> = ({ menuItems }) => {
   const sideNav = useRef<HTMLUListElement>(null);
 
+
   useEffect(
     () => {
       if (sideNav.current) {
