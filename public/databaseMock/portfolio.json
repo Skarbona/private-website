@@ -1,0 +1,189 @@
+[
+  {
+    "id": 676,
+    "categories": ["React"],
+    "tags": ["React", "REST API"],
+    "links": {
+      "live_link": "http://reactshopper.chiliit.pl/",
+      "git_repo_link": "https://github.com/Skarbona/filipshopper"
+    }
+  },
+  {
+    "id": 264,
+    "categories": [
+      "CSS Frameworks",
+      "CSS3",
+      "Javascript",
+      "PHP",
+      "React",
+      "Wordpress"
+    ],
+    "tags": [
+      "JS",
+      "Materialize CSS",
+      "PHP",
+      "React",
+      "Redux",
+      "REST API",
+      "Wordpress API"
+    ],
+    "links": {
+      "live_link": "http://filip-sokolowski.pl",
+      "git_repo_link": "https://github.com/Skarbona/PrivateWebsiteWithReactAndWP"
+    }
+  },
+  {
+    "id": 376,
+    "categories": ["CSS3", "Javascript", "React"],
+    "tags": [
+      "JS",
+      "Lodash",
+      "Momento",
+      "React",
+      "React Context API",
+      "REST API"
+    ],
+    "links": {
+      "live_link": "http://projects.chiliit.pl/cryptoreact/",
+      "git_repo_link": "https://github.com/Skarbona/cryptoreact"
+    }
+  },
+  {
+    "id": 382,
+    "categories": ["CSS3", "Javascript", "React"],
+    "tags": ["JS", "React", "Redux", "REST API"],
+    "links": {
+      "live_link": "http://drago-entertainment.com/otherland/",
+      "git_repo_link": "https://github.com/Skarbona/drago-otherland"
+    }
+  },
+  {
+    "id": 390,
+    "categories": ["Javascript", "React"],
+    "tags": [
+      "Bootstrap 3",
+      "JS",
+      "Lodash",
+      "Momento",
+      "React",
+      "Redux",
+      "REST API"
+    ],
+    "links": { "live_link": "", "git_repo_link": "" }
+  },
+  {
+    "id": 445,
+    "categories": ["CSS3", "Javascript"],
+    "tags": ["JS"],
+    "links": {
+      "live_link": "http://projects.chiliit.pl/skew/",
+      "git_repo_link": "https://github.com/Skarbona/skew"
+    }
+  },
+  {
+    "id": 414,
+    "categories": ["CSS Frameworks", "CSS3"],
+    "tags": ["Bootstrap 4", "JQuery"],
+    "links": {
+      "live_link": "http://projects.chiliit.pl/admin-ui-bootstrap/",
+      "git_repo_link": "https://github.com/Skarbona/admin-ui-bootstrap4"
+    }
+  },
+  {
+    "id": 440,
+    "categories": ["CSS3", "Javascript", "VueJS"],
+    "tags": ["JS", "VueJS"],
+    "links": {
+      "live_link": "http://projects.chiliit.pl/counter/",
+      "git_repo_link": "https://github.com/Skarbona/counter"
+    }
+  },
+  {
+    "id": 419,
+    "categories": ["CSS Frameworks", "CSS3"],
+    "tags": ["Bootstrap 4", "JQuery"],
+    "links": {
+      "live_link": "http://projects.chiliit.pl/bootstrap-project-4/",
+      "git_repo_link": "https://github.com/Skarbona/bootstrap4"
+    }
+  },
+  {
+    "id": 424,
+    "categories": ["CSS Frameworks", "CSS3"],
+    "tags": ["Bootstrap 4"],
+    "links": {
+      "live_link": "http://projects.chiliit.pl/bootstrap-project-2/",
+      "git_repo_link": "https://github.com/Skarbona/bootstrap2"
+    }
+  },
+  {
+    "id": 428,
+    "categories": ["CSS Frameworks", "CSS3"],
+    "tags": ["Bootstrap 4", "JQuery"],
+    "links": {
+      "live_link": "http://projects.chiliit.pl/bootstrap-project-1/",
+      "git_repo_link": "https://github.com/Skarbona/bootstrap1"
+    }
+  },
+  {
+    "id": 432,
+    "categories": ["Javascript", "PHP"],
+    "tags": ["Google API", "JQuery", "JS", "PHP"],
+    "links": {
+      "live_link": "http://projects.chiliit.pl/ajax-chat/",
+      "git_repo_link": "https://github.com/Skarbona/ajax-chat-with-google-recaptchav2"
+    }
+  },
+  {
+    "id": 436,
+    "categories": ["Javascript", "PHP"],
+    "tags": ["JQuery", "JS", "PHP"],
+    "links": {
+      "live_link": "http://projects.chiliit.pl/ajax-form/",
+      "git_repo_link": "https://github.com/Skarbona/ajax-form-with-google-recaptchav2"
+    }
+  },
+  {
+    "id": 410,
+    "categories": ["CSS Frameworks", "PHP"],
+    "tags": ["Bootstrap 4", "PHP", "REST API"],
+    "links": {
+      "live_link": "http://phpframework.chiliit.pl/",
+      "git_repo_link": "https://github.com/Skarbona/custom-webiste-on-own-framework"
+    }
+  },
+  {
+    "id": 451,
+    "categories": [
+      "CSS Frameworks",
+      "CSS3",
+      "Javascript",
+      "PHP",
+      "React",
+      "VueJS",
+      "Wordpress"
+    ],
+    "tags": [
+      "Bootstrap 3",
+      "Bootstrap 4",
+      "Google API",
+      "JQuery",
+      "JS",
+      "Lodash",
+      "Materialize CSS",
+      "Momento",
+      "PHP",
+      "React",
+      "React Context API",
+      "React Material UI",
+      "Redux",
+      "REST API",
+      "VueJS",
+      "Wordpress API"
+    ],
+    "links": {
+      "live_link": "https://chiliit.pl/",
+      "git_repo_link": "https://github.com/Skarbona/"
+    }
+  }
+]

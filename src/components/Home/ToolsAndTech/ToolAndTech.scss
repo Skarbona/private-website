@@ -1,0 +1,14 @@
+.section__tools-and-tech {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  img {
+    max-width:300px;
+    width:100%;
+  }
+}

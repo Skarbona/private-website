@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 
 import * as menuEpics from "../store/menu/epic";
+import * as elementsEpics from "../store/elements/epic";
 import {
   AppDispatchInterface,
   AppInterface,
@@ -13,13 +14,14 @@ import { Header } from "./Header/Header";
 import { RootState } from "../store/store.interface";
 import { Home } from "./Home/Home";
 
-// TODO: Add css modules
 const AppWrapper: React.FC<AppInterface> = ({
   menuEpic,
-  menuItems
+  menuItems,
+  portfolioEpic
 }: AppInterface) => {
   useEffect(() => {
     menuEpic();
+    portfolioEpic();
     // eslint-disable-next-line
   }, []);
 
@@ -34,7 +36,8 @@ const AppWrapper: React.FC<AppInterface> = ({
 };
 
 const mapDispatchToProps: AppDispatchInterface = {
-  menuEpic: menuEpics.menuEpic
+  menuEpic: menuEpics.menuEpic,
+  portfolioEpic: elementsEpics.portfolioEpic
 };
 
 const mapStateToProps = ({ menu }: RootState) =>

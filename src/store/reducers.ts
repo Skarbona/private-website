@@ -1,10 +1,12 @@
 import { combineReducers, Reducer } from "redux";
 
 import menu from "./menu/reducer";
-import {RootState} from "./store.interface";
+import elements from "./elements/reducer";
+import { RootState } from "./store.interface";
 
 const reducers: Reducer<RootState> = combineReducers<RootState>({
-    menu,
+  menu,
+  elements
 });
 
 export default reducers;
