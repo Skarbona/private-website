@@ -4,6 +4,7 @@ import { Hero } from "../Shared/Hero/Hero";
 import { Label } from "../Shared/Label/Label";
 import { ToolsAndTech } from "./ToolsAndTech/ToolsAndTech";
 import { Portfolio } from "./Portfolio/Portfolio";
+import { Galleries } from "./Galleries/Galleries";
 
 export const Home: React.FC<{}> = () => {
   return (
@@ -23,6 +24,7 @@ export const Home: React.FC<{}> = () => {
         <Label primaryText="Portfolio" secondaryText="See my portfolio!" />
         <Portfolio />
         <Label primaryText="Galleries" secondaryText="See My Travels!" />
+        <Galleries />
         <Label primaryText="Contact" secondaryText="Let’s talk!" />
       </div>
     </React.Fragment>

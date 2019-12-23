@@ -1,5 +1,6 @@
 export interface PortfolioItem {
   id: string;
+  name: string;
   categories: string[];
   tags: string[];
   links: {
@@ -11,6 +12,7 @@ export interface PortfolioItem {
 export interface ElementsInitialState {
   portfolioItems: PortfolioItem[];
   portfolioCategories: string[];
+  selectedPortfolioCat: string;
   loading: boolean;
   error: boolean;
 }

@@ -18,7 +18,13 @@ export interface IFetchPortfolioFail extends ActionInterface {
   type: ElementsActionEnum.FetchPortfolioFail;
 }
 
+export interface ISelectCurrentCategory extends ActionInterface {
+  type: ElementsActionEnum.SelectCurrentCategory;
+  payload: string;
+}
+
 export type ElementsActions =
   | IFetchPortfolioInit
   | IFetchPortfolioSuccess
-  | IFetchPortfolioFail;
+  | IFetchPortfolioFail
+  | ISelectCurrentCategory;

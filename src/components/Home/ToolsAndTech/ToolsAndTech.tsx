@@ -10,7 +10,7 @@ export const ToolsAndTech = memo(() => {
   return (
     <div
       className="section section__tools-and-tech"
-      style={{ backgroundImage: `url(images/backgrounds/tlo-1.png)` }}
+      style={{ backgroundImage: 'url(images/backgrounds/tlo-1.png)'}}
     >
       <div className="container">
         <div className="row">
