@@ -3,6 +3,7 @@ import React from "react";
 import { Hero } from "../Shared/Hero/Hero";
 import { Label } from "../Shared/Label/Label";
 import { ToolsAndTech } from "./ToolsAndTech/ToolsAndTech";
+import { Portfolio } from "./Portfolio/Portfolio";
 
 export const Home: React.FC<{}> = () => {
   return (
@@ -20,6 +21,7 @@ export const Home: React.FC<{}> = () => {
         />
         <ToolsAndTech />
         <Label primaryText="Portfolio" secondaryText="See my portfolio!" />
+        <Portfolio />
         <Label primaryText="Galleries" secondaryText="See My Travels!" />
         <Label primaryText="Contact" secondaryText="Let’s talk!" />
       </div>

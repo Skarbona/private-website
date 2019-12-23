@@ -10,6 +10,7 @@ export interface PortfolioItem {
 
 export interface ElementsInitialState {
   portfolioItems: PortfolioItem[];
+  portfolioCategories: string[];
   loading: boolean;
   error: boolean;
 }

@@ -1,4 +1,4 @@
-import { Action, AnyAction } from "redux";
+import { Action } from "redux";
 import { ThunkAction } from "redux-thunk";
 import { MenuInitialState } from "./menu/initialState.interface";
 import { MenuActions } from "./menu/action.interface";
