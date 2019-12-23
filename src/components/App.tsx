@@ -45,9 +45,6 @@ const mapStateToProps = ({ menu }: RootState) =>
     menuItems: menu.menuItems
   } as AppStoreStateInterface);
 
-export const connector = connect(
-  mapStateToProps,
-  mapDispatchToProps
-);
+export const connector = connect(mapStateToProps, mapDispatchToProps);
 
 export const App = connector(AppWrapper);
