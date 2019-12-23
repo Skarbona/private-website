@@ -14,17 +14,33 @@ const elementsReducer = (
         loading: true,
         error: false
       };
-    case ElementsActionEnum.FetchPortfolioSuccess:
+    case ElementsActionEnum.FetchPortfolioSuccess: {
+      let mapCategories = [] as string[];
+      action.payload.forEach(portfolioItem => {
+        mapCategories = [...mapCategories, ...portfolioItem.categories];
+      });
+
       return {
         ...state,
         portfolioItems: action.payload,
+        portfolioCategories: [
+          "All Items",
+          ...Array.from(new Set(mapCategories))
+        ], // Workaround for TS and new Set (TS support only iterables on Arrays)
         loading: false
       };
+    }
     case ElementsActionEnum.FetchPortfolioFail:
       return {
         ...state,
         loading: false,
         error: true
+      };
+
+    case ElementsActionEnum.SelectCurrentCategory:
+      return {
+        ...state,
+        selectedPortfolioCat: action.payload
       };
     default:
       return state;

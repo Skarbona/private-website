@@ -8,7 +8,10 @@
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "rules": {
+      "import/prefer-default-export": "off"
+    }
   },
   "browserslist": {
     "production": [
@@ -109,6 +112,7 @@
     "fs-extra": "^8.1.0",
     "html-webpack-plugin": "4.0.0-beta.5",
     "identity-obj-proxy": "3.0.0",
+    "material-icons": "^0.3.1",
     "materialize-css": "^1.0.0-rc.2",
     "mini-css-extract-plugin": "0.8.0",
     "node-sass": "^4.13.0",

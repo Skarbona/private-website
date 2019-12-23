@@ -18,3 +18,8 @@ export const fetchPortfolioSuccess: ActionCreator<I.IFetchPortfolioSuccess> = (
 export const fetchPortfolioFail: ActionCreator<I.IFetchPortfolioFail> = () => ({
   type: ElementsActionEnum.FetchPortfolioFail
 });
+
+export const selectCurrentCategory: ActionCreator<I.ISelectCurrentCategory> = (category: string) => ({
+    type: ElementsActionEnum.SelectCurrentCategory,
+    payload: category
+});

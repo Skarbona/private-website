@@ -1,4 +1,5 @@
 @import "~materialize-css";
+@import '~material-icons/iconfont/material-icons.scss';
 
 $primary: color('light-blue', 'darken-1');
 
@@ -11,6 +12,31 @@ $primary: color('light-blue', 'darken-1');
   color: $primary;
 }
 
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  &.flex-center {
+    align-items: center;
+    justify-content: center;
+  }
+  .col {
+    margin-left: 0!important;
+  }
+}
+
+.badge {
+  margin-bottom: 5px;
+  &.primary {
+    color: white;
+  }
+}
+
 @import "../components/Shared/Hero/Hero";
 @import "../components/Home/ToolsAndTech/ToolAndTech";
+@import "../components/Home/Portfolio/Portfolio";
+@import "../components/Home/Portfolio/PortfolioItems/PortfolioItems";
+@import "../components/Home/Galleries/Galleries";
+@import "../components/Shared/Modal/Modal";
 
