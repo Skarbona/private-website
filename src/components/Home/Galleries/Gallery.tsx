@@ -24,7 +24,7 @@ export const Gallery: React.FC<GalleryInterface> = ({ name, images }) => {
 
   return (
     <React.Fragment>
-      <div className="col s12 m6 l6 xl4 animated fadeIn">
+      <div className="col s12 m6 l6 xl4">
         <div className="card">
           <div
             className="card-image"

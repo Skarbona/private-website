@@ -9,10 +9,10 @@ export const Label: React.FC<LabelInterface> = ({
   return (
     <div className={`section ${className} primary darken-1 center-align`}>
       <div className="container">
-        <h2 className=" white-text center-align animated fadeIn">
+        <h2 className=" white-text center-align">
           {primaryText}
         </h2>
-        <p className=" white-text flow-text center-align animated fadeIn ">
+        <p className=" white-text flow-text center-align">
           {secondaryText}
         </p>
       </div>

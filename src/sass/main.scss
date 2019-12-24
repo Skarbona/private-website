@@ -1,43 +1,9 @@
 @import "~materialize-css";
 @import "~material-icons/iconfont/material-icons.scss";
 
-$primary: color("light-blue", "darken-1");
-$secondary: color("light-blue", "darken-3");
+@import "./snippets";
 
-.primary {
-  background-color: $primary;
-  &:hover {
-    background-color: $secondary;
-  }
-}
-
-::selection {
-  background: #fff;
-  color: $primary;
-}
-
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: flex-start;
-  &.flex-center {
-    align-items: center;
-    justify-content: center;
-  }
-  .col {
-    margin-left: 0 !important;
-  }
-}
-
-.badge {
-  cursor: default;
-  margin-bottom: 5px;
-  &.primary {
-    color: white;
-  }
-}
-
+@import "./animations";
 @import "../components/Shared/Hero/Hero";
 @import "../components/Header/Header";
 @import "../components/Home/ToolsAndTech/ToolAndTech";

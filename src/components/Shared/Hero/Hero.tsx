@@ -10,7 +10,6 @@ export const Hero: React.FC<HeroInterface> = ({
   h2Text,
   homeRef
 }) => {
-  console.log(homeRef);
   return (
     <div
       id={name}
