@@ -1,0 +1,51 @@
+$primary: color("light-blue", "darken-1");
+$secondary: color("light-blue", "darken-3");
+
+.primary {
+  background-color: $primary;
+  &:hover {
+    background-color: $secondary;
+  }
+}
+
+::selection {
+  background: #fff;
+  color: $primary;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  &.flex-center {
+    align-items: center;
+    justify-content: center;
+  }
+  .col {
+    margin-left: 0 !important;
+  }
+}
+
+.badge {
+  cursor: default;
+  margin-bottom: 5px;
+  &.primary {
+    color: white;
+  }
+}
+
+.full-width {
+  width: 100%;
+}
+
+.carousel .carousel-item {
+  width: 40vw;
+  height: 70vh;
+  min-width: 300px;
+  min-height: 300px;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -34,7 +34,7 @@ export const Header: React.FC<HeaderInterface> = ({
     menuItems.map((item, i) => (
       <li
         key={`menuID-${item.id}`}
-        className="animated fadeInDown slow"
+        className="slow"
         onClick={() =>
           refArray[i].current!.scrollIntoView({
             block: "start",
@@ -49,7 +49,7 @@ export const Header: React.FC<HeaderInterface> = ({
   return (
     <React.Fragment>
       <div className="navbar-fixed">
-        <nav className="primary animated slideInDown">
+        <nav className="primary">
           <div className="nav-wrapper container">
             <Link to="/" className="brand-logo">
               FilipS.okołowski
