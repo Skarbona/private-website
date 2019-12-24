@@ -3,17 +3,23 @@ import { Link } from "react-router-dom";
 import { Sidenav } from "materialize-css";
 import { HeaderInterface } from "./Header.interface";
 
-export const Header: React.FC<HeaderInterface> = ({ menuItems }) => {
-  const sideNav = useRef<HTMLUListElement>(null);
-  const menuElements = useRef<HTMLLIElement[]>([]);
+export const Header: React.FC<HeaderInterface> = ({
+  menuItems,
+  homeRef,
+  toolsAndTechRef,
+  portfolioRef,
+  galleryRef,
+  contactRef
+}) => {
+  const sideNav: React.RefObject<HTMLUListElement> = useRef(null);
 
-  useEffect(
-    () => {
-        menuElements.current = menuElements.current.slice(0, menuItems.length);
-      // eslint-disable-next-line
-    },
-    [menuItems]
-  );
+  const refArray = [
+    homeRef,
+    toolsAndTechRef,
+    portfolioRef,
+    galleryRef,
+    contactRef
+  ];
 
   useEffect(
     () => {
@@ -25,12 +31,16 @@ export const Header: React.FC<HeaderInterface> = ({ menuItems }) => {
   );
 
   const mapMenuItems = () =>
-    menuItems &&
     menuItems.map((item, i) => (
       <li
         key={`menuID-${item.id}`}
         className="animated fadeInDown slow"
-        ref={el => ((menuElements.current as any)[i] = el)}
+        onClick={() =>
+          refArray[i].current!.scrollIntoView({
+            block: "start",
+            behavior: "smooth"
+          })
+        }
       >
         <Link to="/"> {item.name} </Link>
       </li>

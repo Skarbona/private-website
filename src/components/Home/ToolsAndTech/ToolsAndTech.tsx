@@ -6,11 +6,11 @@ const images = importAllFiles(
   require.context("../../../../public/images/tools", false, /.*\.png$/)
 );
 
-export const ToolsAndTech = memo(() => {
+export const ToolsAndTech: React.FC<{}> = memo(() => {
   return (
     <div
       className="section section__tools-and-tech"
-      style={{ backgroundImage: 'url(images/backgrounds/tlo-1.png)'}}
+      style={{ backgroundImage: "url(images/backgrounds/tlo-1.png)" }}
     >
       <div className="container">
         <div className="row">

@@ -14,8 +14,8 @@ export const PortfolioWrapper: React.FC<PortfolioInterface> = ({
   portfolioItems,
   portfolioCategories,
   selectedPortfolioCat,
-  selectCurrentCategory
-}: PortfolioInterface) => {
+  selectCurrentCategory,
+}) => {
   return (
     <div
       className="section section__portfolio"

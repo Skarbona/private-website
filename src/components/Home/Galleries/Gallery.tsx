@@ -1,19 +1,26 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Carousel } from "materialize-css";
 
 import { GalleryInterface } from "./Gallery.interface";
 import { Modal } from "../../Shared/Modal/Modal";
 
 export const Gallery: React.FC<GalleryInterface> = ({ name, images }) => {
   const [isModalOpen, setModalStatus] = useState<boolean>(false);
+  const carouselRef = useRef<HTMLDivElement>(null);
   const featureImage = Object.values(images)[2];
 
-  const modalHandler = useCallback(
+  useEffect(
     () => {
-      setModalStatus(!isModalOpen);
-    },
-    [isModalOpen]
+      if (carouselRef.current) {
+        Carousel.init(carouselRef.current);
+      }
+    }
   );
+
+  const modalHandler = useCallback(() => setModalStatus(!isModalOpen), [
+    isModalOpen
+  ]);
 
   return (
     <React.Fragment>
@@ -40,7 +47,17 @@ export const Gallery: React.FC<GalleryInterface> = ({ name, images }) => {
       </div>
       {isModalOpen && (
         <Modal onClose={modalHandler}>
-          <div>HELLO WORLD!</div>
+          <div className="carousel" ref={carouselRef}>
+            {Object.keys(images).map(image => (
+              <a
+                className="carousel-item"
+                href={`#photo-${image}`}
+                key={`photo-${image}`}
+              >
+                <img src={images[image]} alt={image} />
+              </a>
+            ))}
+          </div>
         </Modal>
       )}
     </React.Fragment>
