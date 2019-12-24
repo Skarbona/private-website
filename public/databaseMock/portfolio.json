@@ -44,7 +44,7 @@
       "REST API"
     ],
     "links": {
-      "live_link": "http://projects.chiliit.pl/cryptoreact/",
+      "live_link": "",
       "git_repo_link": "https://github.com/Skarbona/cryptoreact"
     }
   },
@@ -64,7 +64,7 @@
     "categories": ["CSS3", "Javascript"],
     "tags": ["JS"],
     "links": {
-      "live_link": "http://projects.chiliit.pl/skew/",
+      "live_link": "",
       "git_repo_link": "https://github.com/Skarbona/skew"
     }
   },
@@ -74,7 +74,7 @@
     "categories": ["CSS Frameworks", "CSS3"],
     "tags": ["Bootstrap 4", "JQuery"],
     "links": {
-      "live_link": "http://projects.chiliit.pl/admin-ui-bootstrap/",
+      "live_link": "",
       "git_repo_link": "https://github.com/Skarbona/admin-ui-bootstrap4"
     }
   },
@@ -84,7 +84,7 @@
     "categories": ["CSS3", "Javascript", "VueJS"],
     "tags": ["JS", "VueJS"],
     "links": {
-      "live_link": "http://projects.chiliit.pl/counter/",
+      "live_link": "",
       "git_repo_link": "https://github.com/Skarbona/counter"
     }
   },
@@ -94,7 +94,7 @@
     "categories": ["CSS Frameworks", "CSS3"],
     "tags": ["Bootstrap 4", "JQuery"],
     "links": {
-      "live_link": "http://projects.chiliit.pl/bootstrap-project-4/",
+      "live_link": "",
       "git_repo_link": "https://github.com/Skarbona/bootstrap4"
     }
   },
@@ -104,7 +104,7 @@
     "categories": ["CSS Frameworks", "CSS3"],
     "tags": ["Bootstrap 4"],
     "links": {
-      "live_link": "http://projects.chiliit.pl/bootstrap-project-2/",
+      "live_link": "",
       "git_repo_link": "https://github.com/Skarbona/bootstrap2"
     }
   },
@@ -114,7 +114,7 @@
     "categories": ["CSS Frameworks", "CSS3"],
     "tags": ["Bootstrap 4", "JQuery"],
     "links": {
-      "live_link": "http://projects.chiliit.pl/bootstrap-project-1/",
+      "live_link": "",
       "git_repo_link": "https://github.com/Skarbona/bootstrap1"
     }
   },
@@ -124,7 +124,7 @@
     "categories": ["Javascript", "PHP"],
     "tags": ["Google API", "JQuery", "JS", "PHP"],
     "links": {
-      "live_link": "http://projects.chiliit.pl/ajax-chat/",
+      "live_link": "",
       "git_repo_link": "https://github.com/Skarbona/ajax-chat-with-google-recaptchav2"
     }
   },
@@ -134,7 +134,7 @@
     "categories": ["Javascript", "PHP"],
     "tags": ["JQuery", "JS", "PHP"],
     "links": {
-      "live_link": "http://projects.chiliit.pl/ajax-form/",
+      "live_link": "",
       "git_repo_link": "https://github.com/Skarbona/ajax-form-with-google-recaptchav2"
     }
   },
