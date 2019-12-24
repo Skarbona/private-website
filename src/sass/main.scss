@@ -1,10 +1,14 @@
 @import "~materialize-css";
-@import '~material-icons/iconfont/material-icons.scss';
+@import "~material-icons/iconfont/material-icons.scss";
 
-$primary: color('light-blue', 'darken-1');
+$primary: color("light-blue", "darken-1");
+$secondary: color("light-blue", "darken-3");
 
 .primary {
-  background-color: $primary
+  background-color: $primary;
+  &:hover {
+    background-color: $secondary;
+  }
 }
 
 ::selection {
@@ -22,11 +26,12 @@ $primary: color('light-blue', 'darken-1');
     justify-content: center;
   }
   .col {
-    margin-left: 0!important;
+    margin-left: 0 !important;
   }
 }
 
 .badge {
+  cursor: default;
   margin-bottom: 5px;
   &.primary {
     color: white;
@@ -34,9 +39,10 @@ $primary: color('light-blue', 'darken-1');
 }
 
 @import "../components/Shared/Hero/Hero";
+@import "../components/Header/Header";
 @import "../components/Home/ToolsAndTech/ToolAndTech";
 @import "../components/Home/Portfolio/Portfolio";
 @import "../components/Home/Portfolio/PortfolioItems/PortfolioItems";
 @import "../components/Home/Galleries/Galleries";
+@import "../components/Home/Contact/Contact";
 @import "../components/Shared/Modal/Modal";
-

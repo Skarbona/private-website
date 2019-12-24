@@ -7,8 +7,10 @@ export const Hero: React.FC<HeroInterface> = ({
   className = "section__hero",
   imageLink,
   h1Text,
-  h2Text
+  h2Text,
+  homeRef
 }) => {
+  console.log(homeRef);
   return (
     <div
       id={name}
@@ -16,6 +18,7 @@ export const Hero: React.FC<HeroInterface> = ({
       style={{
         backgroundImage: `url(${imageLink})`
       }}
+      ref={homeRef}
     >
       <div className="container">
         <h1>{h1Text}</h1>

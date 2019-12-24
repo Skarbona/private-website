@@ -4,9 +4,9 @@ import { ModalInterface } from "./Modal.interface";
 
 export const Modal: React.FC<ModalInterface> = ({
   onClose,
-  openClass,
+  openClass = "open",
   children,
-  style
+  style = { display: "block" }
 }) => {
   return ReactDOM.createPortal(
     <div className="modal__overlay" onClick={onClose}>
@@ -17,7 +17,6 @@ export const Modal: React.FC<ModalInterface> = ({
           e.stopPropagation();
         }}
       >
-        s
         <div className="modal-footer">
           <i onClick={onClose} className="material-icons">
             close

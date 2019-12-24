@@ -49,8 +49,6 @@ const galleries = {
   Ukraine: galleryUkraine
 } as GalleriesInterface;
 
-console.log(galleries);
-
 export const Galleries: React.FC<{}> = () => {
   return (
     <div
