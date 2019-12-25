@@ -175,5 +175,6 @@
     "webpack": "4.41.2",
     "webpack-dev-server": "3.9.0",
     "webpack-manifest-plugin": "2.2.0"
-  }
+  },
+  "homepage": "https://filip-sokolowski.pl"
 }

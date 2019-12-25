@@ -6,4 +6,9 @@
   .sticky-action {
     background-size: cover;
   }
+  .card-actions {
+    a {
+      display: flex;
+    }
+  }
 }
