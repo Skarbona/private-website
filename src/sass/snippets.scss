@@ -52,3 +52,17 @@ button, span, a {
   align-items: center;
   justify-content: center;
 }
+
+.section__socials {
+  .label__children {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > * {
+      margin: 0 10px;
+    }
+  }
+  img {
+    filter: invert(1);
+  }
+}
