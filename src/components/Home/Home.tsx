@@ -6,6 +6,7 @@ import { ToolsAndTech } from "./ToolsAndTech/ToolsAndTech";
 import { Portfolio } from "./Portfolio/Portfolio";
 import { Galleries } from "./Galleries/Galleries";
 import { Contact } from "./Contact/Contact";
+import { Socials } from "./Socials/Socials";
 import { HomeInterface } from "./Home.interface";
 
 export const Home: React.FC<HomeInterface> = ({
@@ -44,6 +45,12 @@ export const Home: React.FC<HomeInterface> = ({
           <Label primaryText="Contact" secondaryText="Let’s talk!" />
           <Contact />
         </div>
+        <Label
+          primaryText="Find more!"
+          className="section__home-element section__socials"
+        >
+         <Socials />
+        </Label>
       </div>
     </React.Fragment>
   );
