@@ -1,5 +1,7 @@
 import React, { useCallback, useRef, useState } from "react";
 
+const preventDefaultForWindow = (e: Event) => e.preventDefault();
+
 export const Contact: React.FC<{}> = () => {
   const wrapper = useRef<HTMLTableSectionElement>(null);
   const topLayer = useRef<HTMLDivElement>(null);
@@ -17,16 +19,22 @@ export const Contact: React.FC<{}> = () => {
 
   const onMouseMoveHandler = useCallback(
     e => {
+      if (!e) return;
       const { delta, x } = positions;
+
+      // Block scrolling windows object
+      window.addEventListener("touchmove", preventDefaultForWindow);
 
       setPositions({
         ...positions,
-        x: e.clientX ? e.clientX : e.touches[0].clientX,
+        x: e.clientX ? e.clientX : e.touches[0] ? e.touches[0].clientX : 1,
         delta: (x - window.innerWidth / 2) * 0.5
       });
 
       handle.current!.style.left = x + delta + "px";
       topLayer.current!.style.width = x + skew + delta + "px";
+
+      window.removeEventListener("touchmove", preventDefaultForWindow);
     },
     [positions]
   );
