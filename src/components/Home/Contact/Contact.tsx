@@ -61,6 +61,7 @@ export const Contact: React.FC<{}> = () => {
             </div>
 
             <img
+              loading="lazy"
               src={process.env.PUBLIC_URL + "images/myPhoto/1.jpg"}
               alt="MyFirstPhoto"
             />
@@ -76,6 +77,7 @@ export const Contact: React.FC<{}> = () => {
             </div>
 
             <img
+              loading="lazy"
               src={process.env.PUBLIC_URL + "images/myPhoto/2.jpg"}
               alt="MySecondPhoto"
             />
