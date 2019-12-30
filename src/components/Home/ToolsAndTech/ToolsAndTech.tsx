@@ -17,7 +17,7 @@ export const ToolsAndTech: React.FC<{}> = memo(() => {
           <div className="col s12 center-align">
             {Object.keys(images).map(image => (
               <div className="col l4 m6 s6 center-align" key={image}>
-                <img src={images[image]} alt={image} />
+                <img loading="lazy" src={images[image]} alt={image} />
               </div>
             ))}
           </div>
