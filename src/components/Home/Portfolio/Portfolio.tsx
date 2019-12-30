@@ -20,7 +20,7 @@ export const PortfolioWrapper: React.FC<PortfolioInterface> = ({
     <div
       className="section section__portfolio"
       style={{
-        backgroundImage: "url(images/backgrounds/tlo-10.png)"
+        backgroundImage: "url(images/backgrounds/tlo-10.webp)"
       }}
     >
       <div className="container">

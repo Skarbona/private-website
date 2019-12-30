@@ -7,7 +7,7 @@ export const Galleries: React.FC<{}> = () => {
   return (
     <div
       className="section section__gallery"
-      style={{ backgroundImage: "url(images/backgrounds/tlo-1.png)" }}
+      style={{ backgroundImage: "url(images/backgrounds/tlo-1.webp)" }}
     >
       <div className="container">
         <div className="row">
