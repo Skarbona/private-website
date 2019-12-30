@@ -3,14 +3,14 @@ import React, { memo } from "react";
 import { importAllFiles } from "../../../utils/importUtils";
 
 const images = importAllFiles(
-  require.context("../../../../public/images/tools", false, /.*\.png$/)
+  require.context("../../../../public/images/tools", false, /.*\.webp/)
 );
 
 export const ToolsAndTech: React.FC<{}> = memo(() => {
   return (
     <div
       className="section section__tools-and-tech"
-      style={{ backgroundImage: "url(images/backgrounds/tlo-1.png)" }}
+      style={{ backgroundImage: "url(images/backgrounds/tlo-1.webp)" }}
     >
       <div className="container">
         <div className="row">

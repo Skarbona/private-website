@@ -20,7 +20,7 @@ export const PortfolioItemsWrapper: React.FC<PortfolioItemsInterface> = ({
           <div className="col s12 m6 l6 xl4 portfolio-item">
             <div
               className="card sticky-action"
-              style={{ backgroundImage: "url(images/backgrounds/tlo-11.png)" }}
+              style={{ backgroundImage: "url(images/backgrounds/tlo-11.webp)" }}
             >
               <div className="card-content">
                 <span className="card-title activator grey-text text-darken-4">

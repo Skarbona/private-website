@@ -24,7 +24,7 @@ export const Home: React.FC<HomeInterface> = ({
           name="home-hero"
           h1Text="FRONT"
           h2Text="DEV"
-          imageLink="images/backgrounds/tlo-10.png"
+          imageLink="images/backgrounds/tlo-10.webp"
         />
         <div ref={toolsAndTechRef}>
           <Label

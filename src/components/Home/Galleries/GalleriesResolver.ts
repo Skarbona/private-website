@@ -6,7 +6,7 @@ const galleryCroatia = importAllFiles(
     require.context(
         "../../../../public/images/galleries/Croatia",
         false,
-        /.*\.jpg$/
+        /.*\.webp$/
     )
 );
 
@@ -14,7 +14,7 @@ const galleryItaly = importAllFiles(
     require.context(
         "../../../../public/images/galleries/Italy",
         false,
-        /.*\.jpg$/
+        /.*\.webp$/
     )
 );
 
@@ -22,19 +22,19 @@ const galleryPrague = importAllFiles(
     require.context(
         "../../../../public/images/galleries/Prague",
         false,
-        /.*\.jpg$/
+        /.*\.webp$/
     )
 );
 
 const galleryUSA = importAllFiles(
-    require.context("../../../../public/images/galleries/USA", false, /.*\.jpg$/)
+    require.context("../../../../public/images/galleries/USA", false, /.*\.webp$/)
 );
 
 const galleryUkraine = importAllFiles(
     require.context(
         "../../../../public/images/galleries/Ukraine",
         false,
-        /.*\.jpg$/
+        /.*\.webp$/
     )
 );
 
@@ -42,7 +42,7 @@ const gallerySpain = importAllFiles(
     require.context(
         "../../../../public/images/galleries/Spain",
         false,
-        /.*\.jpg$/
+        /.*\.webp$/
     )
 );
 
