@@ -5,7 +5,9 @@ $secondary: color("light-blue", "darken-3");
   background-color: $primary;
 }
 
-button, span, a {
+button,
+span,
+a {
   &.primary:hover {
     background-color: $secondary;
   }
@@ -21,6 +23,10 @@ button, span, a {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: flex-start;
+  @media #{$small-and-down} {
+    align-items: center;
+    justify-content: center;
+  }
   &.flex-center {
     align-items: center;
     justify-content: center;
